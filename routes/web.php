@@ -18,7 +18,6 @@ Route::get('/', function () {
     return view('landingpages/master');
 });
 
-<<<<<<< HEAD
 Route::get('/employee', function () {
     return view('employee/index');
 });
@@ -27,11 +26,8 @@ Route::get('/admin', function () {
     return view('admin/index');
 });
 
-
-
-=======
 Route::get('/login', [AuthController::class, 'index']);
 
 Route::post('/login', [AuthController::class, 'login']);
->>>>>>> 6dff37dbdcdcaaa593d82455df9722b079a591b8
+
 

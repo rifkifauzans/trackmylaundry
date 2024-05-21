@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landingpages/master');
 });
+
+Route::get('/employee', function () {
+    return view('employee/index');
+});
+
+Route::get('/admin', function () {
+    return view('admin/index');
+});
+
+
+
+

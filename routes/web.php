@@ -30,4 +30,11 @@ Route::get('/login', [AuthController::class, 'index']);
 
 Route::post('/login', [AuthController::class, 'login']);
 
+Route::get('/category', [App\Http\Controllers\CategoryController::class, 'index'])->name('listCategory');
+Route::get('/category/create', [App\Http\Controllers\CategoryController::class, 'create'])->name('createCategory');
+Route::post('/category/create', [App\Http\Controllers\CategoryController::class, 'store'])->name('storeCategory');
+Route::get('/category/{id}/edit', [App\Http\Controllers\CategoryController::class, 'edit'])->name('editCategory');
+Route::post('/category/{id}/edit', [App\Http\Controllers\CategoryController::class, 'update'])->name('updateCategory');
+Route::get('/category/{id}/delete', [App\Http\Controllers\CategoryController::class, 'destroy'])->name('deleteCategory');
+
 
